@@ -13,7 +13,7 @@ md -Force $GPOBackupDir
 md -Force $GPOReportsDir
 
 #Backup All GPOs and create a text file with the inventory
-#(Backup-GPO -All -Path "$GPOBackupDir" > "$GPOBackupDir\!GPOLIST.TXT" )
+(Backup-GPO -All -Path "$GPOBackupDir" > "$GPOBackupDir\!GPOLIST.TXT" )
 
 #Report on GPOs and create individual files to Given Directory and Format
 
